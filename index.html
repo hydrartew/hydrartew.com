@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hydrartew</title>
+    <meta property="og:site_name" content="hydrartew - сайт о созерцании и познании истинности души hydrartew'a">
+    <meta property="article:author" content="https://github.com/hydrartew">
+    <meta name="description"
+        content="Здесь Вы сможете ознакомиться с жизненным путём и самопознанием автора данного сайта - hydrartew'a.">
+    <meta property="og:title" content="hydrartew - сайт о жизни автора.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hydrartew.ru/">
+    <meta property="og:description"
+        content="Здесь Вы сможете ознакомиться с жизненным путём и самопознанием автора данного сайта - hydrartew'a.">
+    <meta property="url" content="https://hydrartew.ru/">
+    <meta property="name" content="hydrartew - сайт о жизни автора.">
+    <meta property="description"
+        content="Здесь Вы сможете ознакомиться с жизненным путём и самопознанием автора данного сайта - hydrartew'a.">
+    <meta itemprop="url" content="https://hydrartew.ru/">
+    <meta itemprop="name" content="hydrartew - сайт о жизни автора.">
+    <meta itemprop="description"
+        content="Здесь Вы сможете ознакомиться с жизненным путём и самопознанием автора данного сайта - hydrartew'a.">
+    <meta content="#ff4444" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="css/bg.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/silka.css">
+    <link rel="stylesheet" href="css/svg.css">
+    <style>
+        #home:before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            border-bottom: 3px solid #f52;
+            border-radius: 2px;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+            left: 0%;
+            bottom: 25px;
+        }
+
+        #menu>li>#home {
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- <img src="logo.png" class="logo-img" alt="Logo"> -->
+        <input type="checkbox" id="checkbox">
+        <nav>
+            <span id="log">hydrartew.ru</span>
+            <ul id="menu">
+                <li><a id="home" href="">главная</a></li>
+                <li><a id="news" href="">новости</a></li>
+                <li><a id="about" href="">о проекте</a></li>
+                <li><a id="contacts" href="">контакты</a></li>
+            </ul>
+
+            <div class="pc">
+                <div class="pb" id="mb"></div>
+            </div>
+
+            <label for="checkbox">
+                <svg class="menu-icon ham hamRotate ham8" viewBox="0 0 100 100" width="80"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                    <path class="line middle" d="m 30,50 h 40" />
+                    <path class="line bottom"
+                        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                </svg>
+            </label>
+        </nav>
+    </div>
+
+    <div class="welcome">hydrartew<br>
+        <div class="bord">not Hydra but Artem</div>
+    </div>
+
+    <div class="main">
+        <div class="sites">
+            <div class="welcome">hydrartew<br>
+                <div class="bord">not Hydra but Artem</div>
+            </div>
+            <div class="links">
+                <div class="yt">
+                    <object data="svg/yt.svg" type="image/svg+xml"></object>
+                    <a href="https://www.youtube.com/@hydrartew">YouTube</a>
+                </div>
+                <div class="gh">
+                    <object data="svg/gh.svg" type="image/svg+xml"></object>
+                    <a href="https://github.com/hydrartew">GitHub</a>
+                </div>
+                <div class="dc">
+                    <object data="svg/dc.svg" type="image/svg+xml"></object>
+                    <a href="https://discord.gg/2YM7CTmKp7">Discord</a>
+                </div>
+                <div class="vk">
+                    <object data="svg/vk.svg" type="image/svg+xml"></object>
+                    <a href="https://vk.com/hydrartew">VK</a>
+                </div>
+                <div class="tg">
+                    <object data="svg/tg.svg" type="image/svg+xml"></object>
+                    <a href="https://t.me/hydrartew">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="copyright">© 2023 hydrartew</div>
+
+    <script>
+        window.onscroll = function () { scroll() };
+
+        function scroll() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("mb").style.width = scrolled + "%";
+        }
+        
+    </script>
+
+</body>
+
+</html>
